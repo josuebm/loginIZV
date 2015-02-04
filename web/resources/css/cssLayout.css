@@ -1,0 +1,115 @@
+
+#top {
+    position: relative;
+    background-color: #036fab;
+    color: white;
+    padding: 5px;
+    margin: 0px 0px 10px 0px;
+    height: 100px;
+}
+
+#bottom {
+    position: relative;
+    background-color: #036fab;
+    color: white;
+    padding: 5px;
+    margin: 10px 0px 0px 0px;
+}
+
+#left {
+    float: left;
+    background-color: #ece3a5;
+    padding: 5px;
+    width: 150px;
+}
+
+#right {
+    float: right;
+    background-color: #ece3a5;
+    padding: 5px;
+    width: 150px;
+}
+
+.center_content {
+    position: relative;
+    background-color: #dddddd;
+    padding: 5px;
+}
+
+.left_content {
+    background-color: #dddddd;
+    padding: 5px;
+    margin-left: 170px;
+}
+
+.right_content {
+    background-color: #dddddd;
+    padding: 5px;
+    margin: 0px 170px 0px 170px;
+}
+
+#top a:link, #top a:visited {
+  color: white;
+  font-weight : bold;
+  text-decoration: none;
+}
+
+#top a:link:hover, #top a:visited:hover  {
+  color: black;
+  font-weight : bold;
+  text-decoration : underline;
+}
+
+#logo{
+    width: 100px;
+    float: left;
+}
+
+#nombreInsti{
+    font-size: 3em;
+    float: left;
+    display: inline;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+#login{
+    margin: 0 auto;
+    width: 500px;
+}
+
+td{
+    padding: 5px;
+}
+
+.boton{
+    width: 100%;
+    padding: 5px;
+}
+
+.boton.entrar{
+    background: #3497CB;
+    font-weight: bold;
+}
+
+table{
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.etiqueta{
+    font-size: 1.5em;
+}
+
+form{
+    background-color: white;
+    margin-top: 70px;
+}
+
+#content{
+    height: 300px;
+}
+
+
+
+

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="plantilla.xhtml">
+
+            <ui:define name="top">
+                <h:graphicImage  value="#{resource['images/logo.png']}" alt="Logo del instituto" id="logo"/>
+                <h:outputLabel value="Actividades Zaidín-Vergeles" id="nombreInsti"/>
+            </ui:define>
+
+            <ui:define name="content">
+                <div id="login">
+                    <h:form>
+                        <table>
+                            <tr>
+                                <td>
+                                    <h:outputLabel value="Usuario" class="etiqueta" />
+                                </td>
+                                <td>
+                                    <h:inputText maxlength="30" value="#{usuario.name}">
+                                        <f:ajax event="keyup" render="mensaje-nombre" listener="#{usuario.validarNombre}"/>
+                                    </h:inputText>
+                                </td>
+                                <td>
+                                    <h:graphicImage id="mensaje-nombre" height="30" width="30" value="/#{usuario.mensajeErrorNombre}" />
+                                    <!--<h:outputText id="mensaje-nombre" class="mensaje-error" value=""/>-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h:outputLabel value="Contraseña" class="etiqueta"/>
+                                </td>
+                                <td>
+                                    <h:inputText maxlength="30" value="#{usuario.cont}"/>
+                                </td>
+                            </tr>
+                            <!--<tr>
+                                <td colspan="2">
+                                    <h:commandButton value="Entrar" class="boton entrar" action="respuesta"/>
+                                </td>
+                            </tr>-->
+                            <tr>
+                                <td colspan="2">
+                                    <h:commandButton value="Registrarse" class="boton registro" action="registro"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </h:form>
+
+                </div>
+            </ui:define>
+
+            <ui:define name="bottom">
+                <h3>IES Zaidín-Vergeles</h3>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
